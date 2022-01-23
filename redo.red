@@ -10,7 +10,7 @@ Red [
 
 ;Application context
 app: context [
-    title: "Command Line ToDo v1.0.0"
+    title: "Redo - Command Line ToDo v1.0.0"
     help-text: {Commands:
      no argument    : list todos
      <text>         : add new todo
@@ -93,7 +93,7 @@ app: context [
 
     toggle: function [id] [
         unless pos: pos? id [exit]
-        change pos (1 - pos/1)
+        change pos 1 - pos/1
     ]
 
     purge: does [
@@ -102,7 +102,7 @@ app: context [
 
     pos?: function [id] [
         if empty? m: at todos 2 * id - 1 [
-            print ["❗ID:" id "not found." newline]
+            print ["ID:" id "not found." newline]
             return none
         ]
         m
