@@ -18,7 +18,7 @@ Here is the usage:
         *              : purge todos (delete marked todos)
         ?              : show this help
 
-`<id>` is a number between 1 and 999
+> `<id>` is a number between 1 and 999
 
 ToDo items are simply stored in `redo.cnf` file in the folder where the application executed. So you can have multiple ToDo files.
 
@@ -26,16 +26,18 @@ ToDo items are simply stored in `redo.cnf` file in the folder where the applicat
 ---
 
 
-An example use (no need to quote)
+An example use:
 
 First add some to-do items:
+
+> No need to quote `<text>` unless it contains special symbols like `&`
 
     > redo Write README.md
     > redo Add CLI mode
     > redo Add release package to GitHub
     > redo Go to shopping
 
-No arguments to list:
+No arguments to get list of to-do items:
 
     > redo
     ID      Done?   Text
@@ -74,12 +76,14 @@ Purge marked items (this will delete all marked items)
 
 ---
 
-It is very simply yet useful application, there are a bunch of things that can be added. Feel free to contribute.
+It a is very simple yet useful utility, there are a bunch of features that can be added. Feel free to contribute.
 
 Here are some ideas:
 
-* Store additional user settings in the `redo.cnf` file (like add to top or bottom etc.)
+* Store additional user settings in the `redo.cnf` file (like add to top or bottom, disable emojis etc.)
 * Encrypt the config file.
 * Use user's profile path for the config file.
 * Add item creation date
 * Add sorting
+
+> 💡 You can hard link `redo.cnf` file into a Dropbox or Google Drive folder so it will be cloud backed.

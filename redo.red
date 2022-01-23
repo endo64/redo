@@ -72,7 +72,7 @@ app: context [
         print ["ID" tab "Done?" tab "Text"]
         i: 1
         foreach [mark text] todos [
-            print [pad/with/left i 3 #"0" tab  pick "❌✅" mark + 1  tab text]
+            print [pad/with/left i 3 #"0" tab  pick "✘✔" mark + 1  tab text]
             i: i + 1
         ]
     ]
