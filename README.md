@@ -20,7 +20,7 @@ Here is the usage:
 
 > `<id>` is a number between 1 and 999
 
-ToDo items are simply stored in `redo.cnf` file in the folder where the application executed. So you can have multiple ToDo files.
+ToDo items are simply stored in `redo.todo` file in the folder where the application executed. So you can have multiple ToDo files.
 
 
 ---
@@ -80,10 +80,10 @@ It a is very simple yet useful utility, there are a bunch of features that can b
 
 Here are some ideas:
 
-* Store additional user settings in the `redo.cnf` file (like add to top or bottom, disable emojis etc.)
+* Store additional user settings in the `redo.todo` file (like add to top or bottom, disable emojis etc.)
 * Encrypt the config file.
 * Use user's profile path for the config file.
 * Add item creation date
 * Add sorting
 
-> 💡 You can hard link `redo.cnf` file into a Dropbox or Google Drive folder so it will be cloud backed.
+> 💡 You can hard link `redo.todo` file into a Dropbox or Google Drive folder so it will be cloud backed.
